@@ -1,0 +1,647 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+menu,
+input,
+fieldset,
+textarea,
+button,
+select,
+th,
+td,
+div,
+span,
+header,
+nav,
+footer {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+a,
+a:visited {
+  border: none;
+  text-decoration: none;
+}
+
+fieldset,
+img,
+input {
+  border: none;
+}
+
+input,
+textarea {
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-size: 14px;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
+    'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Arial', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei UI', 'Microsoft YaHei',
+    'Source Han Sans CN', 'sans-serif';
+  line-height: 1.6;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+.none {
+  display: none !important;
+}
+
+.clear::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+
+body {
+  background: #f8f9fb;
+}
+
+/* 早盘捉妖*/
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.catch_devil {
+  padding-bottom: 77px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.catch_devil .logo {
+  background: url(../images/bg_catch_devil.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  padding: 15px 15px 12px 15px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.catch_devil .logo h1 {
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.catch_devil .logo p {
+  font-size: 14px;
+  line-height: 18px;
+  width: 180px;
+  color: #e5e1e1;
+  margin-bottom: 10px;
+}
+
+.catch_devil .logo .time {
+  color: #d4d1d1;
+  font-size: 12px;
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+}
+
+.catch_devil .logo .client {
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  padding: 0 6px;
+  width: 66px;
+  padding-left: 27px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.catch_devil .logo .client:before {
+  border: solid transparent;
+  content: ' ';
+  position: absolute;
+  width: 16px;
+  background: url(../images/icon_client.png) no-repeat center;
+  background-size: cover;
+  height: 15px;
+  left: 3px;
+  top: 1px;
+}
+
+.catch_devil .logo .client a {
+  color: #fff;
+}
+
+.catch_devil .con {
+  background: #f8f8f8;
+}
+
+.catch_devil .con .tab_box .tab_item {
+  float: left;
+  width: 33.3%;
+  padding: 12px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 15px;
+  color: #111111;
+  letter-spacing: 0;
+  line-height: 15px;
+  position: relative;
+}
+
+.catch_devil .con .tab_box .tab_item.active {
+  color: #ef7f21;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.catch_devil .con .tab_box .tab_item.active .active_line {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -15px;
+  background: #ef7f21;
+}
+
+.catch_devil table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  border: none;
+}
+
+.catch_devil table td,
+.catch_devil table th {
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.catch_devil .table_wrap {
+  overflow: scroll;
+}
+.catch_devil table .fixed_head {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  opacity: 1;
+  z-index: 4;
+  border-left: none;
+  background: #f8f8f8;
+}
+.catch_devil table th:nth-child(2),
+.catch_devil table td:nth-child(2) {
+  padding-left: 108px;
+}
+.catch_devil table th {
+  opacity: 0.6;
+  font-size: 12px;
+  color: #333;
+  line-height: 12px;
+  height: 30px;
+}
+
+.catch_devil table .order_up::after {
+  background: url(../images/icon_asce_order.png) no-repeat;
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 8px;
+  background-size: 100%;
+  margin-top: -3px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.catch_devil table .order_down::after {
+  background: url(../images/icon_asce_order.png) no-repeat;
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 8px;
+  background-size: 100%;
+  margin-top: -3px;
+  margin-left: 4px;
+  vertical-align: middle;
+  transform: rotate(180deg);
+}
+
+.catch_devil table .order_default::after {
+  background: url(../images/icon_order.png) no-repeat;
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 8px;
+  background-size: 100%;
+  margin-top: -3px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.catch_devil table td img {
+  height: 9px;
+  margin-left: 3px;
+  transform: rotate(180deg);
+}
+
+.catch_devil table tr td .img_rotate {
+  transform: rotate(0);
+}
+
+.catch_devil table tbody tr td {
+  height: 50px;
+  padding: 0 5px;
+  text-align: right;
+}
+
+.catch_devil table tr .text_align_left {
+  padding-left: 15px;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 30px;
+}
+
+.catch_devil table tr .text_align_right {
+  text-align: right;
+}
+
+.catch_devil table .name {
+  font-size: 17px;
+  color: #110e0e;
+  line-height: 17px;
+  margin-bottom: 3px;
+  padding-top: 7px;
+}
+
+.catch_devil table .num {
+  opacity: 0.6;
+  font-size: 12px;
+  color: #333333;
+  line-height: 12px;
+}
+
+.catch_devil table .time {
+  font-size: 14px;
+  color: #333333;
+  line-height: 12px;
+  text-align: right;
+}
+
+.catch_devil table .price {
+  font-size: 18px;
+  color: #111111;
+  text-align: right;
+  line-height: 18px;
+  font-weight: bold;
+}
+.catch_devil table .drzf {
+  font-size: 18px;
+  color: #f54646;
+  text-align: right;
+  line-height: 18px;
+  font-weight: bold;
+}
+.catch_devil table .rxhzf {
+  font-size: 18px;
+  color: #f54646;
+  text-align: right;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.catch_devil table .per {
+  font-size: 18px;
+  color: #d92424;
+  text-align: right;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.catch_devil table .tr_echart {
+  border: 1px solid #f3f3f3;
+  margin: 4px;
+  position: relative;
+  padding: 2px 0;
+}
+
+.catch_devil table .per.color_green {
+  color: #26b73a;
+}
+/*星级评分*/
+.rate_bar {
+  display: inline-block;
+  width: 80px;
+  height: 100%;
+  background: url(../images/star_gray.png) repeat;
+  background-size: 16px 16px;
+  vertical-align: -2px;
+}
+.rate_bar .rate-stars {
+  display: block;
+  width: 0;
+  height: 16px;
+  background: url(../images/star.png) repeat;
+  background-size: 16px 16px;
+  transition-property: width;
+  transition-duration: 400ms;
+}
+.rate_bar .rate-stars.level1 {
+  width: 20%;
+}
+.rate_bar .rate-stars.level2 {
+  width: 40%;
+}
+.rate_bar .rate-stars.level3 {
+  width: 60%;
+}
+.rate_bar .rate-stars.level4 {
+  width: 80%;
+}
+.rate_bar .rate-stars.level5 {
+  width: 100%;
+}
+
+.catch_devil .tr_echart {
+  border: 1px solid #f3f3f3;
+}
+
+.catch_devil .tips_bottom {
+  background: #fef5dd;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #e88203;
+}
+
+.catch_devil .risk_warning {
+  font-size: 12px;
+  color: rgba(17, 17, 17, 0.4);
+  line-height: 14px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.catch_devil .tips_top {
+  background: #fef5dd;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #de6f13;
+  padding: 0 15px;
+  display: -webkit-flex;
+  display: flex;
+  align-content: space-around;
+}
+
+@media screen and (max-width: 320px) {
+  .catch_devil .tips_top {
+    font-size: 12px;
+  }
+}
+
+.catch_devil .tips_top span {
+  display: block;
+}
+
+.catch_devil .tips_top .a_upgrade {
+  text-align: right;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.catch_devil .con .tab_box .tab_item {
+  width: 50%;
+}
+.catch_devil table tbody td:nth-child(3) {
+  font-size: 17px;
+  font-weight: normal;
+}
+.catch_devil table .wpql {
+  color: #ef7f21;
+}
+.catch_devil table .flzt {
+  color: #3691e1;
+}
+.catch_devil table .slbw {
+  color: #f54646;
+}
+.catch_devil table .ltjj {
+  color: #936ed7;
+}
+.catch_devil table .jltb {
+  color: #fcbe19;
+}
+.catch_devil table .qlch {
+  color: #ff1da2;
+}
+.catch_devil table .name img {
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+}
+
+.catch_devil table tr td {
+  position: relative;
+}
+
+.catch_devil table .opacity {
+  display: inline-block;
+  width: 44%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  background: linear-gradient(to right, #f8f8f8, #fff);
+}
+
+.catch_devil table th {
+  color: #111;
+  width: auto;
+  padding: 0 5px;
+  text-align: right;
+}
+
+.catch_devil .teacher {
+  width: 68px;
+  height: 68px;
+  position: fixed;
+  right: 0;
+  top: 30%;
+  z-index: 2;
+}
+
+.catch_devil .teacher img {
+  width: 100%;
+}
+
+.footer .tips_bottom {
+  background: #fef5dd;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #e88203;
+}
+
+.footer .footer_wrap {
+  background-image: linear-gradient(-90deg, #f69030 3%, #ef7f21 100%);
+  width: 100%;
+  height: 44px;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+}
+
+.footer .line_center {
+  width: 1px;
+  background: #ffffff;
+  height: 24px;
+  display: inline-block;
+}
+
+.footer .footer_wrap .price,
+.footer .footer_wrap .btn_renew {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.footer .price .new {
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 14px;
+}
+
+.footer .price .price_unique {
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 24px;
+}
+
+.footer .price .old {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  line-height: 12px;
+  text-decoration: line-through;
+}
+
+.footer .btn_renew {
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 44px;
+  right: 0;
+  top: 0;
+}
+
+.btn_renew span {
+  font-size: 14px;
+  line-height: 44px;
+  margin-left: 10px;
+}
+
+.nothing {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nothing .tip_icon {
+  display: inline-block;
+  width: 58%;
+}
+
+.nothing .tip_txt {
+  font-size: 12px;
+  color: rgba(17, 17, 17, 0.6);
+  text-align: center;
+  line-height: 16px;
+}
+
+.footer .share {
+  opacity: 0.8;
+  background: #ef7f21;
+  border-radius: 28px;
+  font-size: 14px;
+  color: #ffffff;
+  position: absolute;
+  top: -40px;
+  width: auto;
+  padding: 4px 10px;
+  right: 0;
+}
+
+.footer .share:after,
+.catch_devil .footer .share:before {
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  top: 100%;
+  position: absolute;
+  width: 0;
+}
+
+.footer .share:after {
+  border-width: 10px;
+  border-top-color: #ef7f21;
+  right: 50px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript">
+        //字体大小适配
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 16 * (clientWidth / 375) + 'px';
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window)
+    </script>
+</head>
+
+<body>
+    <div class="super_short">
+        <div class="logo">
+            <h1>超级短打</h1>
+            <p>超级快赢，大赚小赔，三步赢家战法</p>
+            <div class="clear">
+                <div class="client">
+                    <a href="javascript:;">客服</a>
+                </div>
+                <div class="time">
+                    2019.03.21更新
+                </div>
+            </div>
+        </div>
+        <div class="con">
+            <div class="tips_top">
+                <span class="txt">基础版需要升级为专业版才能查看。 </span>
+                <span class="a_upgrade">立即升级 ></span>
+            </div>
+            <ul class="tab_box clear">
+                <li class="tab_item active">短打池<div class="active_line"></div>
+                </li>
+                <li class="tab_item">精选池<div class="active_line"></div>
+                </li>
+                <li class="tab_item">战绩榜<div class="active_line"></div>
+                </li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="text_align_left">名称（代码）</th>
+                        <th class="text_align_right">入选时间</th>
+                       <th class="order_down">现价</th>
+                       <th class="order_default">涨跌幅</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text_align_left">
+                            <p class="name">****</p>
+                            <p class="num">****</p>
+                        </td>
+                        <td class="text_align_right">
+                            <p class="time">09:30</p>
+                            <p class="time">2018.04.07</p>
+                        </td>
+                        <td>
+                            <span class="price">46.30</span>
+                        </td>
+                        <td>
+                            <span class="per">0<img class="img_rotate" src="./images/icon_up.png" alt=""></span>
+                        </td>
+                    </tr>
+                    <tr class="tr_echart">
+                        <td colspan="4">
+                            <!-- 为ECharts准备一个具备大小（宽高）的DOM -->
+                            <div id="main" style="width: 100%; height:300px;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text_align_left">
+                            <p class="name">****</p>
+                            <p class="num">****</p>
+                        </td>
+                        <td class="text_align_right">
+                            <p class="time">09:30</p>
+                            <p class="time">2018.04.07</p>
+                        </td>
+                        <td>
+                            <span class="price">46.30</span>
+                        </td>
+                        <td>
+                            <span class="per color_red">+2.37%<img src="./images/icon_up.png" alt=""></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text_align_left">
+                            <p class="name">****</p>
+                            <p class="num">****</p>
+                        </td>
+                        <td class="text_align_right">
+                            <p class="time">09:30</p>
+                            <p class="time">2018.04.07</p>
+                        </td>
+                        <td>
+                            <span class="price">46.30</span>
+                        </td>
+                        <td>
+                            <span class="per color_green">+2.37%<img src="./images/icon_up.png" alt=""></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			<div class="nothing">
+				<img src="./images/nothing.png" alt="" class="tip_icon">
+				<p class="tip_txt">受行情影响，暂无符合该模型的股票入选，</p>
+				<p class="tip_txt">请谨慎操作，注意风险</p>
+			</div>
+
+			<div class="risk_warning">
+                *风险提示：本产品基于公开数据和智能算法生成，作为辅助投资决策工具，并不能保证用户盈利或不受亏损。产品信息仅供参考投资者应独立自主决策和承担风险！
+            </div>
+        </div>
+    </div>
+	<div class="footer">
+	    <div class="tips_bottom">
+	        您购买的是基础版，需要升级成专业版
+	    </div>
+	    <a class="footer_wrap">
+	        <div class="price">
+	            <p class="new">¥ 1258元/季</p>
+	            <p class="old">原价¥2500/季</p>
+	        </div>
+	        <span class="line_center"></span>
+	        <div class="btn_renew">
+	            立即续费
+	        </div>
+	    </a>
+	</div>
+    <script src="https://cdn.upchina.com/assert/echarts/3.5.4/echarts.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
